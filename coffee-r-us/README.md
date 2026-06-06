@@ -17,20 +17,6 @@ A React Single Page Application (SPA) for managing an e-commerce coffee store, b
 - **Custom Hooks** — `useCoffee` (all CRUD operations), `useToast` (notifications)
 - **Testing** — Vitest + React Testing Library test suite covering all features
 
----
-
-## Tech Stack
-
-| Tool | Purpose |
-|---|---|
-| React 18 | UI framework |
-| React Router v6 | Client-side routing |
-| Vite | Build tool & dev server |
-| json-server | Simulated REST backend |
-| Vitest | Unit testing |
-| React Testing Library | Component testing |
-
----
 
 ## Setup & Usage
 
@@ -58,45 +44,7 @@ npm test
 
 ---
 
-## Project Structure
 
-```
-src/
-├── components/
-│   ├── App.jsx           # Root — defines routes
-│   ├── Navbar.jsx        # Navigation bar
-│   ├── HomePage.jsx      # / route — landing page
-│   ├── ShopPage.jsx      # /shop route — product listing
-│   ├── AdminPage.jsx     # /admin route — CRUD portal
-│   ├── AddCoffeeForm.jsx # Form to add a new coffee
-│   └── ProductCard.jsx   # Single product display card
-├── hooks/
-│   ├── useCoffee.js      # Custom hook — all CRUD + state
-│   └── useToast.js       # Custom hook — toast notifications
-├── tests/
-│   ├── setup.js
-│   ├── Navbar.test.jsx
-│   ├── ProductCard.test.jsx
-│   ├── AddCoffeeForm.test.jsx
-│   └── useCoffee.test.jsx
-├── main.jsx
-└── index.css
-db.json                   # Simulated backend data
-```
-
----
-
-## API Endpoints (json-server)
-
-| Method | Endpoint | Description |
-|---|---|---|
-| GET | `/coffee` | Fetch all coffees |
-| POST | `/coffee` | Add a new coffee |
-| PATCH | `/coffee/:id` | Update a coffee (e.g. price) |
-| DELETE | `/coffee/:id` | Delete a coffee |
-| GET | `/store_info` | Fetch store details |
-
----
 
 ## Known Limitations
 
@@ -106,19 +54,6 @@ db.json                   # Simulated backend data
 
 ---
 
-## Git Workflow
-
-```bash
-# Create a feature branch
-git checkout -b feature/add-shop-page
-
-# After changes
-git add .
-git commit -m "feat: add shop page with search and filter"
-git push origin feature/add-shop-page
-
-# Open PR on GitHub → merge to main → delete branch
-git checkout main
-git pull origin main
-git branch -d feature/add-shop-page
-```
+## Built by
+austinatogo1
+EOF
