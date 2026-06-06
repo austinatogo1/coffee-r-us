@@ -2,12 +2,6 @@
 
 A React Single Page Application (SPA) for managing an e-commerce coffee store, built with Vite, React Router, and json-server.
 
-## Screenshot
-
-> *(Take a screenshot of your running app and replace this line with: `![App Screenshot](screenshot.png)`)*
-
----
-
 ## Features
 
 - **Home Page** — Store landing page with live store info fetched from the backend
