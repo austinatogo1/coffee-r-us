@@ -7,13 +7,14 @@ import Footer from "./Footer";
 
 function App() {
   return (
-    <div>
+    <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
       <Navbar />
       <Routes>
         <Route path="/"      element={<HomePage />} />
         <Route path="/shop"  element={<ShopPage />} />
         <Route path="/admin" element={<AdminPage />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
