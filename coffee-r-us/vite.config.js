@@ -2,8 +2,8 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
 export default defineConfig({
+  base: '/coffee-r-us/',
   plugins: [react()],
-  base: '/https://github.com/austinatogo1/coffee-r-us/tree/main/',   
   test: {
     environment: "jsdom",
     globals: true,
